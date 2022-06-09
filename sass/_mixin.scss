@@ -1,0 +1,41 @@
+@mixin flex_def($justify,$align,$gap){
+    display: flex;
+    justify-content:$justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin anchor_Btn {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;    
+    color: #000000;   
+    text-decoration: none;
+}
+
+@mixin  Btn($font_size,$background,$color,$paddingH,$paddingV) {
+    padding: $paddingH $paddingV;
+    padding-top: $paddingV;
+    padding-bottom: $paddingV;
+    padding-left: $paddingH ;
+    padding-right: $paddingH;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font_size;
+    background: $background;
+    border: none;
+    color: $color;
+    border-radius: 60px;
+    border: 2px solid $color;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        color: $background;
+        background: $color;
+        border: 2px solid $background;
+    }
+}
+
+
+
+
